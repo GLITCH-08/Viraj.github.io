@@ -248,6 +248,7 @@ header {
     font-size: 25px;
     line-height: 60px;
     transition: all 0.3s ease-out;
+    color: black; /* Add this line to set the icon color to black */
   }
   
   .W1 .button:hover .icon i{
@@ -277,5 +278,9 @@ header {
     color: black;
   }
 
+/* Add this style to your CSS file */
+.W1 .button a {
+  text-decoration: none;
+}
 
 
