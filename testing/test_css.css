@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #081b29;
+}
+
+.certificates {
+  background-color: #081b29;
+  padding: 20px;
+  text-align: center;
+}
+
+.certificate-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  overflow-x: scroll; 
+}
+
+.certificate-list li {
+  margin-right: 20px;
+}
+
+.certificate-list img {
+  max-width: 600px; /* Set a maximum width for your certificates */
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
