@@ -9,7 +9,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <header>
+    <header class="header">
         <a href="#" class="name">Viraj Raina</a>
         <!-- <p>Computer Science Student with ML Major</p> -->
         <div class="bx bx-menu" id="menu-icon"></div>
@@ -26,7 +26,7 @@
     <section class="Home" id="Home">
         <div class="content">
           <div class="a">
-            <h1>Hi, I am Viraj Raina</h1>
+            <h1>Hi, I am <span>Viraj Raina</span></h1>
             <div class="wrapper">
               <ul class="dynamic-txts">
                 <li><span>YouTuber</span></li>
@@ -67,11 +67,11 @@
                 </div>
               </div>
           </div>
-          <div class="b">
+          <!-- <div class="b">
             <div class="image">
               <img src="img.png" alt="Your Image">
             </div>
-          </div>  
+          </div>   -->
               
         </div>
     </section>
@@ -268,5 +268,47 @@
 
     <!-------------------------Contact------------------------------>
 
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me</span></h2>
+
+      <form action="#">
+
+        <div class="input-box">
+          <div class="input-field">
+            <input type="text" placeholder="Full Name" required>
+            <span class="focus"></span>
+          </div>
+          <div class="input-field">
+            <input type="text" placeholder="Email Address" required>
+            <span class="focus"></span>
+          </div>
+        </div>
+
+        <div class="input-box">
+          <div class="input-field">
+            <input type="text" placeholder="Moblie Number" required>
+            <span class="focus"></span>
+          </div>
+          <div class="input-field">
+            <input type="text" placeholder="Email Subject" required>
+            <span class="focus"></span>
+          </div>
+        </div>
+
+        <div class="textarea-field">
+          <textarea name="" id="" cols="30" rows="10" placeholder="Your message" required></textarea>
+          <span class="focus"></span>
+        </div>
+
+        <div class="btn btns">
+          <button type="submit" class="btn">Submit</button>
+        </div>
+
+      </form>
+    </section>
+
+  
+
+    <script src="script.js"></script>
 </body>
 </html>
