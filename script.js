@@ -28,4 +28,28 @@ window.onscroll = () => {
     let header = document.querySelector('header');
 
     header.classList.toggle('sticky', window.scrollY > 100);
+
+    // remove toggle icon and navbar when click navbar links (scroll)
+
+    menutIcon.classList.remove('bx-x');
+    navbar.classList.remove('active');
 }
+
+  // for submit button for contact
+    function sendmail(){
+        let parms = {
+            name: document.getElementById("name").value, 
+            email: document.getElementById("email").value, 
+            subject: document.getElementById("subject").value, 
+            mobile: document.getElementById("mobile").value, 
+            message: document.getElementById("message").value, 
+        }
+
+        emailjs.send("service_09kajle","template_iwnw0mu",parms)
+        .then(function(response) {
+            console.log('SUCCESS!', response.status, response.text);
+         }, function(error) {
+            console.log('FAILED...', error);
+         });
+    }
+
