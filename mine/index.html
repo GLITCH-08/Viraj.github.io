@@ -7,18 +7,30 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+          emailjs.init("Q63ueiMHemooQGAUd");
+      })();
+    </script>
+    
 </head>
 <body>
-    <header>
+    <header class="header">
         <a href="#" class="name">Viraj Raina</a>
-        <!-- <p>Computer Science Student with ML Major</p> -->
+        
         <div class="bx bx-menu" id="menu-icon"></div>
+
         <nav class="navbar">
             <a href="#Home" class="active">Home</a>
             <a href="#about">About</a>
-            <a href="#education">education</a>
+            <a href="#education">Education</a>
             <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
+            <span class="active-nav"></span>
         </nav>
     </header>
 
@@ -26,19 +38,19 @@
     <section class="Home" id="Home">
         <div class="content">
           <div class="a">
-            <h1>Hi, I am Viraj Raina</h1>
+            <h1>Hi, I am <span>Viraj Raina</span></h1>
             <div class="wrapper">
               <ul class="dynamic-txts">
-                <li><span>YouTuber</span></li>
-                <li><span>Designer</span></li>
-                <li><span>Developer</span></li>
+                <li><span>ML Student</span></li>
+                <li><span>Andriod Developer</span></li>
+                <li><span>Python progammer</span></li>
                 <li><span>Freelancer</span></li>
               </ul>
             </div>
             <!-- <h3>Developer</h3> -->
             <div class="btn">
                 <a href="#">Hire me</a>
-                <a href="#">lets talk</a>
+                <a href="#contact">Contact me</a>
             </div>
             <div class="W1">
                 <div class="button">
@@ -67,11 +79,11 @@
                 </div>
               </div>
           </div>
-          <div class="b">
+          <!-- <div class="b">
             <div class="image">
               <img src="img.png" alt="Your Image">
             </div>
-          </div>  
+          </div>   -->
               
         </div>
     </section>
@@ -87,11 +99,11 @@
       </div>
 
       <div class="about-content">
-        <h3>Developer</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut similique eius aspernatur amet dolore odio necessitatibus illum voluptate, commodi doloribus? Deserunt nemo dolorum suscipit sint fugiat alias eligendi iusto sit.</p>
+        <h3>STUDENT</h3>
+        <p>Hello there!!  I am a third-year computer science student pursuing my B.Tech degree with a specialization in artificial intelligence and machine learning. As a fast learner with a keen interest in AI/ML, I am always eager to take on new challenges and contribute to various projects. My enthusiasm for exploring the depths of artificial intelligence fuels my motivation to work on cutting-edge technologies and contribute meaningfully to the field. Let's embark on this exciting journey of innovation together!</p>
         
         <div class="btn btns">
-          <a href="#" class="read">Read more</a>
+          <a href="./Resume-Viraj-Raina.pdf" download class="read">Dowload CV</a>
         </div>
 
       </div>
@@ -109,14 +121,23 @@
           <div class="education-box">
             <div class="education-content">
               <div class="context">
-                <div class="year"><i class="bx bxs-calendar"> 2021 - 2025</i></div>
-                <h3>BTECH</h3>
+                <div class="year"><i class="bx bxs-calendar"> 2020 - 2021</i></div>
+                <h3>12th</h3>
                 <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda</p>
+                From Ahlcon Public School</p>
               </div>
             </div>
 
             <div class="education-content">
+              <div class="context">
+                <div class="year"><i class="bx bxs-calendar"> 2021 - 2025</i></div>
+                <h3>BTECH</h3>
+                <p>
+                3rd Year Machine learning </p>
+              </div>
+            </div>
+
+            <!-- <div class="education-content">
               <div class="context">
                 <div class="year"><i class="bx bxs-calendar"> 2021 - 2025</i></div>
                 <h3>BTECH</h3>
@@ -132,16 +153,7 @@
                 <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda</p>
               </div>
-            </div>
-
-            <div class="education-content">
-              <div class="context">
-                <div class="year"><i class="bx bxs-calendar"> 2021 - 2025</i></div>
-                <h3>BTECH</h3>
-                <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda</p>
-              </div>
-            </div>
+            </div> -->
 
           </div>
         </div>
@@ -152,14 +164,14 @@
           <div class="education-box">
             <div class="education-content">
               <div class="context">
-                <div class="year"><i class="bx bxs-calendar"> 2021 - 2025</i></div>
-                <h3>BTECH</h3>
+                <div class="year"><i class="bx bxs-calendar"> 2023 - 2024</i></div>
+                <h3>Worqhat</h3>
                 <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda</p>
+                Project Contributors</p>
               </div>
             </div>
 
-            <div class="education-content">
+            <!-- <div class="education-content">
               <div class="context">
                 <div class="year"><i class="bx bxs-calendar"> 2021 - 2025</i></div>
                 <h3>BTECH</h3>
@@ -184,7 +196,7 @@
                 <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda</p>
               </div>
-            </div>
+            </div> -->
 
           </div>
         </div>
@@ -265,11 +277,109 @@
 
       </div>
     </section>
+     <!-- --------------------------------------------------projects----------------------------------- -->
+     <section class="projects" id="projects">
+      <h2 class="heading">Latest <span>Project</span></h2>
+
+      <div class="projects-container">
+        <div class="projects-box">
+          <img src="game.jpg" alt="">
+          <div class="projects-layer">
+            <h4>POSE ESTIMATION </h4>
+            <p>Machine learning</p>
+            <a href="https://github.com/GLITCH-08/POSE_ESTIMATION"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <div class="projects-box">
+          <img src="game.jpg" alt="">
+          <div class="projects-layer">
+            <h4>WEB-CRAWLER</h4>
+            <p>Using python</p>
+            <a href="https://github.com/GLITCH-08/WEB-CRAWLER"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <div class="projects-box">
+          <img src="game.jpg" alt="">
+          <div class="projects-layer">
+            <h4>Portfolio</h4>
+            <p>Web devlopment</p>
+            <a href="https://github.com/GLITCH-08/Viraj.github.io"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <div class="projects-box">
+          <img src="game.jpg" alt="">
+          <div class="projects-layer">
+            <h4>Web Design</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <div class="projects-box">
+          <img src="game.jpg" alt="">
+          <div class="projects-layer">
+            <h4>Web Design</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <div class="projects-box">
+          <img src="game.jpg" alt="">
+          <div class="projects-layer">
+            <h4>Web Design</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </section>
 
     <!-------------------------Contact------------------------------>
 
     <section class="contact" id="contact">
-      
+      <h2 class="heading">Contact <span>Me</span></h2>
+
+      <form id="contactForm">
+
+        <div class="input-box">
+          <div class="input-field">
+            <input type="text" id="name" placeholder="Full Name" required>
+            <span class="focus"></span>
+          </div>
+          <div class="input-field">
+            <input type="email" id="email" placeholder="Email Address" required>
+            <span class="focus"></span>
+          </div>
+        </div>
+
+        <div class="input-box">
+          <div class="input-field">
+            <input type="text" id="mobile" placeholder="Moblie Number" required>
+            <span class="focus"></span>
+          </div>
+          <div class="input-field">
+            <input type="text" id="subject" placeholder="Email Subject" required>
+            <span class="focus"></span>
+          </div>
+        </div>
+
+        <div class="textarea-field">
+          <textarea name="" id="message" cols="30" rows="10" placeholder="Your message" required></textarea>
+          <span class="focus"></span>
+        </div>
+
+        <div class="btn btns">
+          <button type="submit" class="btn" onclick="sendmail()">Submit</button>
+        </div>
+
+      </form>
     </section>
+    <script src="script.js"></script>
+    
 </body>
 </html>
