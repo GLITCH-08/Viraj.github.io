@@ -1032,6 +1032,14 @@ h2 span{
   gap: 2.5rem;
 }
 
+.projects-box {
+  /* position: relative;
+  overflow: hidden; */
+  width: 200%;
+  max-width: 400px; /* Adjust the maximum width as needed */
+  height: 200px; /* Set the fixed height for all projects */
+}
+
 .projects-container .projects-box {
   position: relative;
   border-radius:  2rem;

@@ -53,3 +53,12 @@ window.onscroll = () => {
          });
     }
 
+    function openMultipleTabs() {
+        
+        var link1 = "Major.pdf";
+        var link2 = "major_report.pdf";
+
+        // Open links in different tabs
+        window.open(link1, '_blank');
+        window.open(link2, '_blank');
+    }
