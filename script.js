@@ -55,8 +55,8 @@ window.onscroll = () => {
 
     function openMultipleTabs() {
         
-        var link1 = "Major.pdf";
-        var link2 = "major_report.pdf";
+        var link1 = "./PDF/Major.pdf";
+        var link2 = "./PDF/major_report.pdf";
 
         // Open links in different tabs
         window.open(link1, '_blank');
